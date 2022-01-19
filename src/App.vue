@@ -7,7 +7,8 @@
       <router-link to="/sample2">sample2</router-link> |
       <router-link to="/sample3">sample3</router-link> |
       <router-link to="/sample4">sample4</router-link> |
-      <router-link to="/sample5">sample5</router-link> |
+      <router-link to="/sample5-1">sample5-1</router-link> |
+      <router-link to="/sample5-2">sample5-2</router-link> |
     </div>
     <router-view />
   </div>

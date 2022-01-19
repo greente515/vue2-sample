@@ -40,9 +40,14 @@ const routes = [
     component: () => import("../views/Sample4.vue"),
   },
   {
-    path: "/sample5",
-    name: "Sample5",
-    component: () => import("../views/Sample5.vue"),
+    path: "/sample5-1",
+    name: "Sample5-1",
+    component: () => import("../views/Sample5-1.vue"),
+  },
+  {
+    path: "/sample5-2",
+    name: "Sample5-2",
+    component: () => import("../views/Sample5-2.vue"),
   },
 ];
 
