@@ -5,7 +5,9 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/sample1">sample1</router-link> |
       <router-link to="/sample2">sample2</router-link> |
-      <router-link to="/sample3">sample3</router-link>
+      <router-link to="/sample3">sample3</router-link> |
+      <router-link to="/sample4">sample4</router-link> |
+      <router-link to="/sample5">sample5</router-link> |
     </div>
     <router-view />
   </div>
