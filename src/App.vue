@@ -9,6 +9,8 @@
       <router-link to="/sample4">sample4</router-link> |
       <router-link to="/sample5-1">sample5-1</router-link> |
       <router-link to="/sample5-2">sample5-2</router-link> |
+      <router-link to="/sample6-1">sample6-1</router-link> |
+      <router-link to="/sample6-2">sample6-2</router-link> |
     </div>
     <router-view />
   </div>

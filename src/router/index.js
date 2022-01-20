@@ -49,6 +49,16 @@ const routes = [
     name: "Sample5-2",
     component: () => import("../views/Sample5-2.vue"),
   },
+  {
+    path: "/sample6-1",
+    name: "Sample6-1",
+    component: () => import("../views/Sample6-1.vue"),
+  },
+  {
+    path: "/sample6-2",
+    name: "Sample6-2",
+    component: () => import("../views/Sample6-2.vue"),
+  },
 ];
 
 const router = new VueRouter({

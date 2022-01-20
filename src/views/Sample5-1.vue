@@ -78,7 +78,6 @@ export default {
         ["Python", 4, 7, 6, 11, 23],
         ["JavaScript", 7, 10, 8, 7, 20],
       ],
-      addArray: ["첫번째", "두번째", "세번째", "네번째", "다섯번째"],
     };
   },
 
@@ -87,18 +86,6 @@ export default {
   methods: {
     good: function () {
       this.isShow = false;
-    },
-    addLast: function () {
-      this.addArray.push("[맨 뒤에 추가]"); //array.push(추가데이터)
-    },
-    addObj: function (index) {
-      this.addArray.splice(index, 0, "[추가]"); //array.splice(지정위치, 0, 추가데이터)
-    },
-    changeObj: function (index) {
-      this.addArray.splice(index, 1, "[변경]"); //array.splice(위치, 1, 변화데이터)
-    },
-    deleteObj: function (index) {
-      this.addArray.splice(index, 1); //array.splice(지정위치, 1)
     },
   },
 };
