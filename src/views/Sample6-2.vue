@@ -56,7 +56,7 @@ export default {
     //myNumber를 감지하여 값이 변할 경우 실행한다.
     myNumber() {
       //data의 tweenedNumber 프로퍼티를 1초에 myNumber까지 증가시킨다.
-      TweenMax.to(this.$data, 1, { tweenedNumber: this.myNumber }); //TweenMax 오류
+      TweenMax.to(this.$data, 1, { tweenedNumber: this.myNumber }); //TweenMax 오류 - 스크립트 확인 필요
     },
   },
   computed: {

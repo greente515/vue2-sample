@@ -11,6 +11,8 @@
       <router-link to="/sample5-2">sample5-2</router-link> |
       <router-link to="/sample6-1">sample6-1</router-link> |
       <router-link to="/sample6-2">sample6-2</router-link> |
+      <router-link to="/markdown">markdown</router-link> |
+      <router-link to="/transition">transition</router-link> |
     </div>
     <router-view />
   </div>

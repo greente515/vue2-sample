@@ -59,6 +59,16 @@ const routes = [
     name: "Sample6-2",
     component: () => import("../views/Sample6-2.vue"),
   },
+  {
+    path: "/markdown",
+    name: "Markdown",
+    component: () => import("../views/MarkdownEditor.vue"),
+  },
+  {
+    path: "/transition",
+    name: "Transition",
+    component: () => import("../views/Transition.vue"),
+  },
 ];
 
 const router = new VueRouter({
