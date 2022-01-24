@@ -13,10 +13,22 @@
       <router-link to="/sample6-2">sample6-2</router-link> |
       <router-link to="/markdown">markdown</router-link> |
       <router-link to="/transition">transition</router-link> |
+      <router-link to="/player">player</router-link> |
+      <router-link to="/moreLoad">moreLoad</router-link> |
     </div>
     <router-view />
+    <spinner :loading="$store.state.LoadingStatus" />
   </div>
 </template>
+
+<script>
+import Spinner from "@/components/Spinner";
+export default {
+  components: {
+    Spinner,
+  },
+};
+</script>
 
 <style>
 #app {

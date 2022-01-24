@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import store from "../store/index";
 
 Vue.use(VueRouter);
 
@@ -69,12 +70,39 @@ const routes = [
     name: "Transition",
     component: () => import("../views/Transition.vue"),
   },
+  {
+    path: "/player",
+    name: "Player",
+    component: () => import("../views/Player.vue"),
+  },
+  {
+    path: "/moreLoad",
+    name: "MoreLoad",
+    component: () => import("../views/MoreLoad.vue"),
+  },
+  {
+    path: "/miniplayer",
+    name: "MiniPlayer",
+    component: () => import("../views/MiniPlayer.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  store.commit("startSpinner");
+  setTimeout(() => {
+    next();
+  }, 1);
+});
+
+// eslint-disable-next-line no-unused-vars
+router.afterEach((to, from) => {
+  store.commit("endSpinner");
 });
 
 export default router;
